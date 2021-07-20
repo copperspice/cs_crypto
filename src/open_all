@@ -1,0 +1,3 @@
+/d/Programs_64/Diamond/Diamond.exe \
+ `find . -name \*.h` --no_autoload  --no_saveconfig
+
