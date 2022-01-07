@@ -1,8 +1,8 @@
 /***********************************************************************
 *
-* Copyright (c) 2021 Tim van Deurzen
-* Copyright (c) 2021 Ansel Sermersheim
-* Copyright (c) 2021 Barbara Geller
+* Copyright (c) 2021-2022 Tim van Deurzen
+* Copyright (c) 2021-2022 Ansel Sermersheim
+* Copyright (c) 2021-2022 Barbara Geller
 *
 * This file is part of CsCrypto.
 *
