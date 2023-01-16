@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.16.0 FATAL_ERROR)
 
-cmake_policy(VERSION 3.16..3.21)
+cmake_policy(VERSION 3.16..3.23)
+
+if (${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.19.0")
+   # allows spaces in ctest names
+   cmake_policy(SET CMP0110 NEW)
+endif()
 
 if (${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.20.0")
    # enable RTTI on MSVC
