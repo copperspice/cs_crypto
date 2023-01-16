@@ -21,11 +21,20 @@ target_link_libraries(
    CsCrypto::Util
 )
 
+message("-- Searching for required packages\n")
+
 if (ENABLE_OPENSSL)
    # look for OpenSSL
    find_package(OpenSSL 1.1)
 
    if (TARGET OpenSSL::Crypto)
+
+      if (OpenSSL_FOUND)
+         message(STATUS "OpenSSL was found \n"
+            " * Version: ${OPENSSL_VERSION}\n"
+            " * Path: ${OPENSSL_CRYPTO_LIBRARY}\n")
+      endif()
+
       target_compile_definitions(
          Drivers
          INTERFACE
@@ -46,6 +55,12 @@ if (ENABLE_BOTAN)
    find_package(Botan)
 
    if (TARGET Botan::Botan)
+
+      if (Botan_FOUND)
+         message(STATUS "Botan was found \n"
+            " * Path: ${BOTAN_LIBRARY}\n")
+      endif()
+
       target_compile_definitions(
          Drivers
          INTERFACE
