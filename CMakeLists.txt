@@ -18,7 +18,7 @@ project(CsCrypto)
 
 set(BUILD_MAJOR "1")
 set(BUILD_MINOR "0")
-set(BUILD_MICRO "0")
+set(BUILD_MICRO "1")
 
 option(BUILD_EXAMPLES "Build the CsCrypto examples" OFF)
 option(BUILD_TESTS    "Enables building the Catch2 Unit Tests" OFF)
