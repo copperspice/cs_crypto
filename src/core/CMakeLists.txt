@@ -11,7 +11,7 @@ target_include_directories(
 target_compile_features(
    Core
    INTERFACE
-   cxx_std_17
+   cxx_std_20
 )
 
 target_link_libraries(

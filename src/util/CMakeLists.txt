@@ -11,7 +11,7 @@ target_include_directories(
 target_compile_features(
    Util
    INTERFACE
-   cxx_std_17
+   cxx_std_20
 )
 
 list(APPEND CS_CRYPTO_UTIL_INCLUDES
