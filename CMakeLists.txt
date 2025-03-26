@@ -17,8 +17,8 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
 project(CsCrypto)
 
 set(BUILD_MAJOR "1")
-set(BUILD_MINOR "0")
-set(BUILD_MICRO "2")
+set(BUILD_MINOR "1")
+set(BUILD_MICRO "0")
 
 option(BUILD_EXAMPLES "Build the CsCrypto examples" OFF)
 option(BUILD_TESTS    "Enables building the Catch2 Unit Tests" OFF)
